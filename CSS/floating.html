@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>floating</title>
+
+        <style>
+            .bluebox{       
+               color: white;
+               background-color: #1877f2;
+               height: 100px;
+               width: auto;
+               float:left;
+            }
+
+            .yelloebox{
+                color: black;
+                background-color:rgb(252,216,202) ;
+                height:100px;
+                width: auto;
+                float: right;
+               
+
+            }
+
+            .greenbox{
+                color: white;
+                background-color:#4c4d51 ;
+                height: 100px;
+                width: auto;
+
+                clear: both; /*it will not allow any element in between fb and apple(only applicable for both command other commands have other reactions)*/
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="bluebox">
+        <p>facebook</p>
+        </div>
+
+        <div class="yelloebox">
+        <p>apple</p>
+        </div>
+
+        <div class="greenbox">
+        <p>microsoft</p>
+        </div>
+    </body>
+
+</html>

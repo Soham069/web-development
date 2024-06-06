@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <meta charset="utf-8">
+        <title>Box model</title>
+
+        <style> /*css mey commet aise krte hai*/ 
+            .bluebox{       /*dot classname is used for classes to decorate and # idname is used for id decoration */
+               color: white; 
+               background-color: #1877f2;
+               height: auto;
+               width: auto;
+               padding: 16px; /*<!--likha huaa content bichme lana hoo yaa kahi pr bhi lana hoo to padding use hoti--> */
+               border: 10px #e8c14e ridge; /*<!--forst parameter(10px) defines the width to the boder & second parameter(decides color)type of border(ridge)-->*/
+
+               outline-style: solid;
+               outline-color: #bc8df5;
+               outline-width: thick;
+
+               margin: 20px;
+            }
+
+            .yelloebox{
+                color: black;
+                background-color:rgb(252,216,202);
+
+                height:auto;
+                width: auto;
+                padding:10px 5px 7px 3px; /*<!-- for top right bottom left -->*/
+
+                border-width: 10px 15px 5px 10px;
+                border-color: green orange red yellow;
+                border-style: ridge;  /* <!--jb tk border style code mey nhi likhoge tb tk border color tag ka effect website mey show nhi hoga--> */
+
+                margin: 60px 10px 30px 20px; /* another type to represent margin*/
+            }
+
+            .greenbox{
+                color: white;
+                background-color:#4c4d51;
+
+                height: 100px;
+                width: 100px;
+                padding:40px 10px; /* <!-- for top and bottom 40px and for right and left 10px-->*/
+
+                border-width: 10px 20px;
+                border-style: groove;
+                border-color: aqua;
+                border-radius: 40px; /* border radius will makes the corner, curves*/
+
+                margin: 60px 10px ; /* another type */
+            }
+            /* <!--go to inspect of webpage and see body < box model(swipe krr)--> */
+           p{
+            margin:0;
+            background-color: #8bbbbf;
+           }
+        </style>
+    </head>
+
+    <body>
+        <div class="bluebox">
+        <p>facebook is great</p>
+        </div>
+
+        <div class="yelloebox">
+        <p>apple</p>
+        </div>
+
+        <div class="greenbox">
+        <p>microsoft</p>
+        </div>
+    </body>
+</html>

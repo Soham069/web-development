@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>display tag</title>
+
+        <style>
+            .bluebox{       
+               color: white;
+               background-color: #1877f2;
+               height: 100px;
+               width: auto;
+
+              /* visibility: hidden; */
+               /*to hide facebook div while keeping the preserved space fb is seeking*/
+              
+              /* display: none; */
+              /*to hide fb and not keeping the space for it (its like its never even existed)*/
+
+            }
+
+            .yelloebox{
+                color: black;
+                background-color:rgb(252,216,202) ;
+                height:100px;
+                width: auto;
+            }
+
+            .greenbox{
+                color: white;
+                background-color:#4c4d51 ;
+                height: 100px;
+                width: auto;
+            }
+
+            .great{    
+                color: #b24506;
+                display: block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="bluebox">
+        <p>facebook is <span class="great">great</span></p>
+        </div>
+
+        <div class="yelloebox">
+        <p>apple</p>
+        </div>
+
+        <div class="greenbox">
+        <p>microsoft</p>
+        </div>
+    </body>
+
+</html>

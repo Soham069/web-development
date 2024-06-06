@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>background image</title>
+        <style>
+            .section_a{
+                background-image: url(images/picture.jpg); /*to add image from cess folder*/
+
+                background-size: 100% 100%; /*eske size key always 2 hee parameter rhege*/
+                background-repeat: no-repeat; /* ek image baar baar screen pr nhi dikhegi*/
+                background-origin: content-box; /*image start kaha sey kroge border sey ya content box sey uske liye yea tag*/
+
+                color: black;
+                height: 100px;
+                width: auto;
+                padding: 16px;
+                border: 10px #e8c14e ridge;
+                outline-style: solid;
+                outline-color: blue;
+                outline-width: thick;
+            }
+
+            .section_b{
+                background-image: url(images/picture.jpg);
+                background-repeat: no-repeat;
+                background-size: 50px 50px;
+                background-origin: border-box;
+                background-position: top;
+                
+                height: 100px;
+                width: auto;
+                padding: 10px 5px 7px 3px;
+                border-width: 10px 15px 5px 10px;
+                border-color: black green orange yellow;
+                border-style: ridge;
+                margin: 60px 10px 30px 20px;
+            }
+
+            .section_c{
+                color: white;
+                background-color:#4c4d51;
+
+                height: 100px;
+                width: 100px;
+                padding:40px 10px;
+                border-width: 10px 20px;
+                border-style: groove;
+                border-color: aqua;
+                border-radius: 40px; /* border radius will makes the corner, curves*/
+
+                margin: 60px 10px ; 
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="section_a">
+            <p>FACEBOOK</p>
+        </div>
+
+        <div class="section_b">
+            <p>APPLE</p>
+        </div>
+
+        <div class="section_c">
+            <p>microsoft</p>
+        </div>
+
+    </body>
+</html>
