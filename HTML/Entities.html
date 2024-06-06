@@ -1,0 +1,32 @@
+<!-- program about how to use html reserved characters-->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Entities</title>
+    </head>
+
+    <body>
+        <!--if you put only less than sigh then it will not shown on website (<<<<<<)-->
+
+        <p>some              text</p> <!--here space will not shown in broswer-->
+
+        <p>some
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              text</p> <!--nbsp for number breaking space-->
+
+              <p>some
+                &#160;&#160; &#160; &#160; 
+                &#160; &#160; &#160; &#160; 
+                &#160; &#160; &#160; &#160;  
+                text</p>
+
+                <p> 4<5 </p> <!--out is correct but way is wrong we need to use entity-->
+                 
+                <p>4 &lt; 5</p>    <!--for less than entity-->
+                <p>Facebook &copy;</p> <!--for copy right esymbol entity-->
+    </body>
+</html>
