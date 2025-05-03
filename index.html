@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- this is how you include external css -->
+    <link rel="stylesheet" href="soham.css">
+
+    <!-- this is how you include external js -->
+    <script src="soham.js"></script>
+
+</head>
+<body>
+    <h1>soham</h1>
+    <p>Hello this is paragraph</p>
+
+    <!-- used lorem for auto generation paragraph -->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, earum! Debitis nulla quisquam, in, asperiores explicabo aperiam a, ducimus quam maxime animi perspiciatis earum dicta cum? Dolorem sit voluptatibus ea.</p>
+    
+
+    <!-- press ctrl + Enter to jump into the new line -->
+
+    <a href="https://google.com" target="_blank">go to google </a> ,<br>
+    <a href="https://instagram.com" target="_blank">go to instagram </a> ,<br>
+    <a href="https://linkedin.com" target="_blank">go to linked in  </a> ,<br>
+
+    <a href="/link.html" target="_blank">Syntax to connect internal link to your code </a>
+
+    <!-- press alt and click multiple lines to add same changes or attributes at once -->
+    <!-- p*4  press and enter--> 
+
+    <p>here i press alt and select all lines and types only once</p>
+    <p>here i press alt and select all lines and types only once</p>
+    <p>here i press alt and select all lines and types only once</p>
+    <p>here i press alt and select all lines and types only once</p>
+
+
+    <!-- image is not present hence alt text is shown  -->
+    <img src="harry.jpg" alt="Enter error message in case if img doesnt load">
+    <!-- make sure to add images in the same folder of vs code if loading from device  -->
+
+    <img src="robot.jpg" alt="Enter error message in case if img doesnt load"><br>
+
+
+    <ul>
+        <li>This is first item of my unordered list</li>
+        <li>This is second item of my unordered list</li>
+        <li>This is third item of my unordered list</li>
+    </ul>
+
+    <!-- you can justify the type attribute both in ordered as well as unordered list  -->
+    <!-- it can be square disc or circle in unordered list  -->
+    <ul type="square">
+        <li>This is fourth item of my unordered list</li>
+        <li>This is fifth item of my unordered list</li>
+        <li>This is sixth item of my unordered list</li>
+    </ul>
+   
+    <ol type="A">
+        <li>This is first item of my ordered list</li>
+        <li>This is second item of my ordered list</li>
+        <li>This is third item of my ordered list</li>
+    </ol>
+    <br>
+    
+    <!-- TABLES  -->
+    <H2>HTML TABLES</H2>
+    <table>
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>Employee id</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>SOHAM</td>
+                <td>12345</td>
+                <td>All Rounder</td>
+            </tr>
+            <tr>
+                <td>Ayush</td>
+                <td>98765</td>
+                <td>NOOB</td>
+            </tr>
+            <tr>
+                <td>VEDANT</td>
+                <td>100310</td>
+                <td>Lucky</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>this is HTML FORMS tutorial</h2>
+
+    <br>
+
+    <form action="backend.php"></form>
+
+<!-- label tag is used to directly go to entry box once clicked on the Name of the input box(you dont need to specifically go to the entry box), but you need to specify it with 'label for =' same ID name mentioned in input tag  -->
+
+    <label for="name">Name</label>
+    <div>
+        <input type="text" name="myName" id="name">
+    </div>
+<br>
+    <div>
+        Role: <input type="text" name="myRole">
+    </div>
+
+<br>
+   <div>
+        Email: <input type="email" name="myEmail">
+    </div>
+    <br>
+    <div>
+        Date: <input type="date" name="myDate">
+    </div>
+    <br>
+    <div>
+        Bonus: <input type="Number" name="myBonus">
+    </div>
+    <br>
+    <div>
+        Are you Eligible: <input type="checkbox" name="myEligibility">
+    </div>
+
+    
+    <!-- here input type is radio you only select 1 option because i've given them the same name,myGender  -->
+
+
+    <br>
+    <div>
+        Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender"> Other <input type="radio" name="myGender">
+    </div>
+    
+<br>
+        <div>
+        <input type="submit" name="Submit Now">
+        <input type="reset" name="Reset Now">
+        </div>
+<br>
+        <div>
+        Write About Yourself: <br><textarea name="myText"  cols="30" rows="10"></textarea>
+        </div>
+<br>
+    <div>
+        <label for="car">Car</label>
+        <select name="myCar" id="car"></select>
+        <option value="ind">Indica</option>
+        <option value="swf">Swift</option>
+    </div>
+
+<br>
+   
+    <!-- Span Tage is used toWrite two or more paragraphs in same line(inline element hai)  -->
+
+    <h3>ID's & Classes Tutorial </h3>
+    <!-- ID cannot be repeated you need to assign different ids to different div tags wheareas class name can be repeated you can assign same class Name -->
+
+    <div id="mainBox" class="redBg blackBorder">
+
+        This is mainBox
+
+    </div>
+    
+    <span class="redBg"></span>
+
+<!-- Emmet  -->
+ <!-- . is for class & # is for ID  -->
+
+ <!-- agar span chahiyea of.redbg then simply type span.redbg and press enter -->
+    <span class="redbg"></span>
+<!-- agar span chahiyea of ID then simply type span#mainspan and press enter -->
+    <span id="mainspan"></span>
+
+<!-- Emmet takes Div tag as default (Try to type .blackbackground)-->
+ <div class="blackbackground"></div>
+
+ <!-- Creating Multiple Elements Using Emmet  -->
+<!-- TYPE span.myClass.myClass2.myClass3*4  -->
+    
+    <span class="myClass myClass2 myClass3">First</span>
+    <span class="myClass myClass2 myClass3">Second</span>
+    <span class="myClass myClass2 myClass3">Third</span>
+    <span class="myClass myClass2 myClass3">Fourth</span>
+
+</body>
+</html>
+
+
